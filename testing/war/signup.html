@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Campus-Connect</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+
+<!--//theme-style-->
+
+
+</head>
+<body> 
+	  <!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-top">			
+				<div class="logo">
+					<a href="index.html"><img src="images/cbit.jpg" alt=" " ></a>
+				</div>
+				
+				<div class="clearfix"> </div>
+				</div>
+			</div>	
+			<div class="clearfix"> </div>
+			</div>
+			<div class="header-bottom-bottom">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li ><a href="about.html">About Us</a></li>
+						<li class="active"><a href="signup.html" > Sign-Up</a></li>
+						<li><a href="c.html" > Contact </a></li>
+					</ul>	
+						
+				</div>	
+				<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+	
+		<!--content-->
+		<div class="container">
+			<div class="sign">
+			<h3>SIGNUP</h3>
+			<form name="myform" method="POST" action="\admin_insertion">
+				<div>
+					<label>Name</label>
+					<input type="text" name="admin_name" id="name">
+					<span style="color:red;" id="error4" > </span>
+  <br> <br>
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="text" name="admin_id" id="email" > </input>
+<span style="color:red;" id="error" > </span>
+  <br> <br>
+  
+				</div>
+				<div>
+					<label>Password</label>
+					<input type="password" name="admin_pass" id="pass">
+					<span style="color:red;" id="error2" > </span>
+  <br> <br>
+				</div>
+					<div>
+					<label>Domain</label>
+					<input type="text" name="admin_domain" id="domain">
+					<span style="color:red;" id="error3" > </span>
+  <br> <br>
+				</div>
+				
+				     <div>
+						<label>Class/Dept</label>
+						<br>
+						<select tabindex="5" size="1" class="dropdown" id="d" name="s">
+										<option  class="label" value="">CLASS/DEPT</option>
+										<option value="CSE" id="1a"> </option>
+										<option value="ECE" id="1b"> </option>
+										<option value="EEE" id="1c"> </option>
+										<option value="MECHANICAL" id="1d"> </option>
+										<option value="CIVIL" id="1e"> </option>
+										<option value="IT" id="1f"> </option>
+										<option value="CSE2" id="2a"> </option>
+										<option value="CSE1" id="2b"> </option>
+										<option value="ECE1" id="2c"> </option>
+										<option value="ECE2" id="2d"> </option>
+										<option value="EEE1" id="2e"> </option>
+										<option value="EEE2" id="2f"> </option>
+										<option value="MECHANICAL1" id="2g"> </option>
+										<option value="MECHANICAL2" id="2h"> </option>
+										<option value="CIVIL1" id="2i"> </option>
+										<option value="CIVIL2" id="2j"> </option>
+										<option value="IT" id="2k"> </option>
+										<option value="CLG" id="aa"> </option>
+										<option value="" id="2l"> </option>
+										
+									</select>
+							
+				</div>
+				<div>
+				<p>    </p>
+				<br>
+				</div>
+				<div>
+					<label>Year</label>
+					<br>
+					<select tabindex="5" size="1" class="dropdown" id="dp" name="yr">
+																<option  class="label" value="">Year</option>
+																<option value="1" id="y1"> 1</option>
+																<option value="2" id="y2"> 2</option>
+																<option value="3" id="y3"> 3</option>
+																<option value="4" id="y4"> 4</option>
+							</select>
+							</div>
+							<div>
+							<p>  </p>
+							<br>
+							</div>
+            <div class="alert alert-warning">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Note:</strong> Enter Domain value from a1,a2,a3.
+</div>
+
+
+					<input type="submit" value="submit">	
+							
+				</form>
+				
+				</div>
+			</div>
+				
+			<!--footer-->
+			<div class="footer">
+				<div class="container">
+					 <p class="footer-grid"><a href="http://cbit.ac.in/" target="_blank">CBIT</a> </p>
+			 	</div> 	
+			</div>
+<script type="text/javascript">
+			
+			var x=	 document.getElementById("domain");
+			
+			x.addEventListener("blur", myBlurFunction, true);
+function myBlurFunction() {
+
+
+			if((document.getElementById("domain").value)=="a2")
+			{
+					 document.getElementById("1a").innerHTML="CSE";
+					 document.getElementById("1b").innerHTML="ECE";
+					  document.getElementById("1c").innerHTML="EEE";
+					   document.getElementById("1d").innerHTML="MECHANICAL";
+					    document.getElementById("1e").innerHTML="CIVIL";
+						 document.getElementById("1f").innerHTML="IT";
+					
+					
+						
+			}
+			else if((document.getElementById("domain").value)=="a1")
+			{
+						
+					 document.getElementById("2a").innerHTML="CSE2";
+					 document.getElementById("2b").innerHTML="CSE1";
+					  document.getElementById("2c").innerHTML="ECE1";
+					   document.getElementById("2d").innerHTML="ECE2";
+					  
+						 document.getElementById("2e").innerHTML="EEE1";
+						  document.getElementById("2f").innerHTML="EEE2";
+						    document.getElementById("2g").innerHTML="MECHANICAL1";
+					    document.getElementById("2h").innerHTML="MECHANICAL2";
+						 document.getElementById("2i").innerHTML="CIVIL1";
+						  document.getElementById("2j").innerHTML="CIVIL2";
+						   document.getElementById("2k").innerHTML="IT";
+			
+			}
+				else if(document.getElementById("domain").value=="a3")
+				{
+					 document.getElementById("aa").innerHTML="CLG";
+				}
+			
+			}
+			</script>	
+				<script>
+var x = document.getElementById("name");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+    document.getElementById("name").style.backgroundColor = "yellow"; 
+	if(document.getElementById("name").value.length!=0)
+	{
+	 document.getElementById("error4").innerHTML="";
+	}
+}
+
+function myBlurFunction() {
+    document.getElementById("name").style.backgroundColor =""; 
+	if(document.getElementById("name").value.length==0)
+	{
+	 document.getElementById("error4").innerHTML="*This field must be filled";
+	  document.myform.name.value="";
+   document.myform.name.focus();
+	 }
+	  else
+	 {
+	 var gk=document.getElementById("name").value;
+	 var c=0;var i=0;
+	  document.getElementById("error4").innerHTML="";
+	  }
+}
+</script>
+			<script>
+var x = document.getElementById("email");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+    document.getElementById("email").style.backgroundColor = "yellow"; 
+	if(document.getElementById("email").value.length!=0)
+	{
+	 document.getElementById("error").innerHTML="";
+	}
+}
+
+function myBlurFunction() {
+    document.getElementById("email").style.backgroundColor = ""; 
+	if(document.getElementById("email").value.length==0)
+	{
+	 document.getElementById("error").innerHTML="*This field must be filled";
+	  document.myform.email.value="";
+   document.myform.email.focus();
+	 }
+	 else
+	 {
+	 var gk=document.getElementById("email").value;
+	 var c=0;var i=0;
+	  document.getElementById("error").innerHTML="";
+	 
+	  }
+}
+</script>
+<script>
+var x = document.getElementById("pass");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+    document.getElementById("pass").style.backgroundColor = "yellow"; 
+	if(document.getElementById("pass").value.length!=0)
+	{
+	 document.getElementById("error2").innerHTML="";
+	}
+}
+
+function myBlurFunction() {
+    document.getElementById("pass").style.backgroundColor = ""; 
+	if(document.getElementById("pass").value.length==0)
+	{
+	 document.getElementById("error2").innerHTML=" *This field must be filled";
+	  document.myform.pass.value="";
+   document.myform.pass.focus();
+	 }
+	 else
+	 {
+	 var gk=document.getElementById("pass").value;
+	 var c=0;var i=0;
+	  document.getElementById("error2").innerHTML="";
+	   var str = new String(gk);
+	   for(i=0;i<document.getElementById("pass").value.length;i++)
+	   {
+			if(str.charAt(i)==0||str.charAt(i)==1||str.charAt(i)==2||str.charAt(i)==3||str.charAt(i)==4||str.charAt(i)==5||str.charAt(i)==6||str.charAt(i)==7||str.charAt(i)==8||str.charAt(i)==9)
+			{
+				c=c+1;
+			}
+			
+			
+	   }
+	   if(c==0)
+			{
+				 document.getElementById("error2").innerHTML=" *The Password must contain atleast one numeric!!!";
+	  document.myform.pass.value="";
+   document.myform.pass.focus();
+			}
+	  }
+}
+</script>
+<script>
+var x = document.getElementById("domain");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+    document.getElementById("domain").style.backgroundColor = "yellow"; 
+	if(document.getElementById("domain").value.length!=0)
+	{
+	 document.getElementById("error3").innerHTML="";
+	}
+}
+
+function myBlurFunction() {
+    document.getElementById("domain").style.backgroundColor = ""; 
+	if(document.getElementById("domain").value.length==0)
+	{
+	 document.getElementById("error3").innerHTML=" *This field must be filled";
+	  document.myform.domain.value="";
+   document.myform.domain.focus();
+	 }
+	 else
+	 {
+	 var gk=document.getElementById("domain").value;
+	 var c=0;var i=0;
+	  document.getElementById("error3").innerHTML="";
+	   var str = new String(gk);
+	  
+			if((str.charAt(0)=='a')&&(str.charAt(1)==1||str.charAt(1)==2||str.charAt(1)==3))
+			{
+				c=c+1;
+			}
+			
+			
+	   
+	   if(c==0)
+			{
+				 document.getElementById("error3").innerHTML=" *Enter proper Domain value!!!";
+	  document.myform.domain.value="";
+   document.myform.domain.focus();
+			}
+	  }
+}
+</script>
+
+  
+</body>
+</html>
