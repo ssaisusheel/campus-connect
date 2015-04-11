@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="ColorPrimary">#e62117</color>
+    <color name="ColorPrimaryDark">#c31c13</color>
+    <color name="tabsScrollColor">#8a140e</color>
+    <color name="bluee">#60CEFD</color>
+    <color name="blue">#00f</color>
+    <color name="red">#ff0000</color>
+    <color name="grey">#e2d5cd</color>
+    <color name="gblue">#3b5998</color>
+    <color name="pink">#f6546a</color>
+    <color name="orange">#ffa500</color>
+    <color name="brown">#990000</color>
+    <color name="yelow">#008000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey1">#808080</color>
+</resources>
