@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/linear1"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <include
+        android:id="@+id/tool_bar2"
+        layout="@layout/tool_bar2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:src="@drawable/classicon" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l2"
+        android:layout_marginTop="5dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/textView4"
+            android:textColor="#ff8c00"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l3"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:weightSum="1">
+
+        <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iop"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:autoLink="web"
+            android:textColorLink="#576586"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
